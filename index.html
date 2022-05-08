@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <section class="quiz">
+      <h1>Agrotóxicos: você sabe o que está consumindo?</h1>
+      
+    <section class="quiz quiz-1">
+      <h2>1- Se você bebe água da torneira, mesmo que seja filtrada, é bem provável que esteja consumindo doses diárias de agrotóxicos. A Repórter Brasil analisou os dados do SISAGUA e tornou acessível os resultados dos testes feitos em 763 municípios brasileiros. Antes de pesquisar a sua cidade no Mapa da Água, responda: qual das três cidades abaixo apresentou maior número de testes com substâncias tóxicas acima do limite regulamentado pelo Ministério da Saúde?</h2>
+      <ol>
+        <li>Guarulhos</li>
+        <li class="correct">Florianópolis</li>
+        <li>São Paulo</li>
+      </ol>
+      <div class="answer">
+        <p class="result"></p>
+        <p class="correct-answer"> Resposta certa! Florianópolis obteve 26 testes com resultados acima do limite permitido pelo Ministério da Saúde.</p>
+        <p class="wrong-answer">Resposta errada! São Paulo e Guarulhos tiveram 13 e 12 testes, respectivamente, acima do limite. Florianópolis foi uma das piores capitais, com 26 testes acima do limite</p>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/9802751"><script src="https://public.flourish.studio/resources/embed.js"></script></div> 
+      </div>
+    </section>
+
+    <section class="quiz">
+      <h2>2- Além do coquetel de agrotóxicos, a água que você bebe da torneira também pode estar contaminada com os chamados subprodutos, que são as substâncias usadas para o tratamento. Eles seriam seguros se fossem usados abaixo da concentração recomendada. Depois de São Paulo, qual é o estado com maior número de testes com subprodutos acima do limite?</h2>
+      <ol>
+        <li class="correct">Espírito Santo</li>
+        <li>Santa Catarina</li>
+        <li>Paraná</li>
+      </ol>
+      <div class="answer">
+        <p class="result"></p>
+        <p>Resposta certa! Espírito Santo foi o segundo estado com o maior número de testes acima do limite permitido. Foram 370 resultados negativos para subprodutos e 394 para agrotóxicos.</p>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/9803042"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </div>
+    </section>
+
+    <p class="counter">
+      Você acertou 
+      <output>0</output>
+      de
+      <span class="total"></span>
+      perguntas
+    </p>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
