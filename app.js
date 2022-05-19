@@ -8,12 +8,12 @@ for(let alternativa of alternativas){
 
 function verifica (evento){
     const alternativaclicada= evento.target
-    const blocopergunta= alternativaclicada.parentElement.parentElement.classList[1]
+    const blocopergunta= alternativaclicada.parentElement.parentElement
     console.log(blocopergunta)
     const correta= alternativaclicada.classList.contains("correct")
-    const respostacorreta= document.querySelector("." + blocopergunta + " .correct-answer") //seletor + classe + espaço (descendente) nome da classe 
-    const respostaerrada= document.querySelector(".wrong-answer")
-    const blocoresposta= document.querySelector(".answer")
+    const respostacorreta= blocopergunta.querySelector(".correct-answer") //seletor + classe + espaço (descendente) nome da classe 
+    const respostaerrada= blocopergunta.querySelector(".wrong-answer")
+    const blocoresposta= blocopergunta.querySelector(".answer")
     blocoresposta.style.display="initial"
     if (correta) respostacorreta.style.display= "initial"
     else respostaerrada.style.display= "initial"

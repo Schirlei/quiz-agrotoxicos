@@ -3,7 +3,7 @@
 }
 
 body {
-    color: rgb(6, 19, 1);
+    color: rgb(7, 7, 7);
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     display: flex;
@@ -12,14 +12,23 @@ body {
   }
   
   h1 {
-    justify-content: center;
-    
+    text-align: center; 
+    color: blueviolet; 
 }
 
-
+.pergunta{
+  
+color: black;}
   .quiz {
   width: 100%;
   max-width: 900px;
   margin-bottom: 48px;
 }
 
+li{
+  cursor: pointer;
+}
+
+li:hover{
+  background-color: burlywood;
+}
